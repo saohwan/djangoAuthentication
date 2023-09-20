@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "ccms_auth",
+    "djangoAuthentication",
     "rest_framework",
-    "rest_framework.authtoken"
+    "rest_framework.authtoken",
 ]
 
 MIDDLEWARE = [
@@ -102,6 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'djangoAuthentication.UserProfile'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
